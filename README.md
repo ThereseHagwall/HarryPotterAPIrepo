@@ -1,4 +1,4 @@
-# Week3Monday
+# HarryPotteAPIrepo
 
 Vårt första lekpass med AJAX
 
