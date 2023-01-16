@@ -1,5 +1,5 @@
 # HarryPotteAPIrepo
 
-Vårt första lekpass med AJAX
+Leker med API
 
-Vi ska dema Promise, fetch, async och await
+https://hp-api.onrender.com/api/characters
