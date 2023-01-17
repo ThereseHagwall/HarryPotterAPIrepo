@@ -1,12 +1,16 @@
+let cont = document.querySelector(".container") as HTMLElement;
+const loading = document.createElement("img");
+loading.src = "loading.gif";
+cont.append(loading);
+
 const url = "https://hp-api.onrender.com/api/characters"
 
 const p = fetch(url)
     .then(response => {
     return response.json();
     }).then(harryPotterObj => {
-        
+        cont.removeChild(loading);
         for(let i=0; i < harryPotterObj.length; i++){
-            let cont = document.querySelector(".container") as HTMLElement;
             let name = document.createElement("h2") as HTMLElement;
             let species = document.createElement("p") as HTMLElement;
             let gender = document.createElement("p") as HTMLElement;
