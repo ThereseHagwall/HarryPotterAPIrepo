@@ -10,6 +10,7 @@ This is a schoolproject were we learn how to use API.
     4b.When the response comes from the server, we remove the "loading" message and show the data from the server nicely formatted with html and css
 5.Build something neat and smart!
 
+
 The API i jusing is: https://hp-api.onrender.com/api/characters
 
 
