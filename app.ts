@@ -54,5 +54,28 @@ const p = fetch(url)
                     img.className = "Info";
                 }
             })
+        
         }
-});
+    });
+
+let search = document.querySelector("button") as HTMLElement;
+let option = document.querySelector("input") as HTMLInputElement;
+
+
+search.addEventListener("click", function(e){
+    e.preventDefault();
+    console.log("click");
+    if(option.value === "Gryffindor"){
+        console.log("Nu visas Gryffindor")
+        option.value = "";
+    }else if(option.value === "Slytherin"){
+        console.log("Slytherin visas nu");
+        option.value = "";
+    }else if(option.value === "Hufflepuff"){
+        console.log("Hufflepuff visas nu");
+        option.value = "";
+    }else if(option.value === "Ravenclaw"){
+        console.log("Ravenclaw visas nu");
+        option.value = "";
+    }
+})
