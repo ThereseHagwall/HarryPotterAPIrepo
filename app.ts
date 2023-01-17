@@ -1,5 +1,3 @@
-console.log("Loading characters......")
-
 const url = "https://hp-api.onrender.com/api/characters"
 
 const p = fetch(url)
