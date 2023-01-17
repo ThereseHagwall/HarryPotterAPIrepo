@@ -28,8 +28,9 @@ h2{
     cursor: pointer;
     border: 3px outset white;
     border-radius: 10px;
-    background-color: rgb(212, 212, 212);
-    
+    background-color: rgba(212, 212, 212, 0.534);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 h2:hover{
