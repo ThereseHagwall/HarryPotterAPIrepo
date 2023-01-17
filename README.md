@@ -1,4 +1,4 @@
-# HarryPotteAPIrepo
+# HarryPotterAPIrepo
 
 Leker med API
 
