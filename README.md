@@ -1,6 +1,6 @@
 # HarryPotterAPIrepo
 
-#### This is a schoolproject were we learn how to use API. 
+### This is a schoolproject were we learn how to use API. 
 
 # The main task
 
