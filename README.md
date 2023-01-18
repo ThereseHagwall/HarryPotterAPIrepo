@@ -2,6 +2,8 @@
 
 #### This is a schoolproject were we learn how to use API. 
 
+# The main task
+
 1. Find a fun API
 2. Make sure it's open and has "good" documentation, eg
 3. Avoid APIs (in this exercise) that require key
