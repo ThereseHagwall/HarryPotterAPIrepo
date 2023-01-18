@@ -11,6 +11,11 @@ body{
     flex-wrap: wrap;
 }
 
+.loading{
+    width: 250px;
+    height: 250px;
+}
+
 #header{
     display: flex;
     justify-content: center;

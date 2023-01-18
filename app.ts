@@ -1,5 +1,6 @@
 let cont = document.querySelector(".container") as HTMLElement;
 const loading = document.createElement("img");
+loading.className = "loading";
 loading.src = "loading.gif";
 cont.append(loading);
 
