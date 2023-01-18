@@ -13,7 +13,7 @@
 Build something neat and smart!
 
 
-The API i jusing is: https://hp-api.onrender.com/api/characters
+The API i´m using is: https://hp-api.onrender.com/api/characters
 
 
 
