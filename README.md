@@ -1,6 +1,6 @@
 # HarryPotterAPIrepo
 
-####This is a schoolproject were we learn how to use API. 
+#### This is a schoolproject were we learn how to use API. 
 
 1. Find a fun API
 2. Make sure it's open and has "good" documentation, eg
