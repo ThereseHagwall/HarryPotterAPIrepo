@@ -9,9 +9,9 @@ const url = "https://hp-api.onrender.com/api/characters"
 const p = fetch(url)
     .then(response => {
     return response.json();
-    }).then(harryPotterObj => {
+    }).then(harryPotterArr => {
         cont.removeChild(loading);
-        for(let i=0; i < harryPotterObj.length; i++){
+        for(let i=0; i < harryPotterArr.length; i++){
             let name = document.createElement("h2") as HTMLElement;
             let info = document.createElement("p") as HTMLElement;
             let img = document.createElement("img") as HTMLImageElement;
@@ -22,13 +22,13 @@ const p = fetch(url)
             info.className = "Info hidden";
             img.className = "Info hidden";
 
-            if(harryPotterObj[i].house === "Gryffindor"){
+            if(harryPotterArr[i].house === "Gryffindor"){
                 cardInfo.className = "cardInfo gryffindor";
-            }else if(harryPotterObj[i].house === "Slytherin"){
+            }else if(harryPotterArr[i].house === "Slytherin"){
                 cardInfo.className = "cardInfo slytherin";
-            }else if(harryPotterObj[i].house === "Hufflepuff"){
+            }else if(harryPotterArr[i].house === "Hufflepuff"){
                 cardInfo.className = "cardInfo hufflepuff";
-            }else if(harryPotterObj[i].house === "Ravenclaw"){
+            }else if(harryPotterArr[i].house === "Ravenclaw"){
                 cardInfo.className = "cardInfo ravenclaw";
             }
 
@@ -38,10 +38,10 @@ const p = fetch(url)
             
             cardInfo.append(name, info, img);
             
-            name.innerHTML = harryPotterObj[i].name;
-            info.innerHTML = `Species: ${harryPotterObj[i].species} <br /> Gender: ${harryPotterObj[i].gender} <br /> House: ${harryPotterObj[i].house} <br /> Ancestry: ${harryPotterObj[i].ancestry} <br /> Actor: ${harryPotterObj[i].actor}`;
-            img.src = harryPotterObj[i].image;
-            if(harryPotterObj[i].image === ""){
+            name.innerHTML = harryPotterArr[i].name;
+            info.innerHTML = `Species: ${harryPotterArr[i].species} <br /> Gender: ${harryPotterArr[i].gender} <br /> House: ${harryPotterArr[i].house} <br /> Ancestry: ${harryPotterArr[i].ancestry} <br /> Actor: ${harryPotterArr[i].actor}`;
+            img.src = harryPotterArr[i].image;
+            if(harryPotterArr[i].image === ""){
                 cardInfo.removeChild(img);
             }
             
