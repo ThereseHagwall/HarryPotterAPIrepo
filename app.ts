@@ -70,7 +70,7 @@ const p = fetch(url)
         //Lägg lyssnare på knappen och anropa sökfunktionen
         search.addEventListener("click", function(e){
             e.preventDefault();
-            sortByHouse(option.value.toLocaleLowerCase());
+            sortByHouse(option.value.toLowerCase());
 
         })
         //Skapa sök funktionen som ska loopa igenom alla divtaggar och kolla på vad varje element har för klassnamn.
