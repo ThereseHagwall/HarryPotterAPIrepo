@@ -70,18 +70,19 @@ const p = fetch(url)
         //Lägg lyssnare på knappen och anropa sökfunktionen
         search.addEventListener("click", function(e){
             e.preventDefault();
+            cont.innerHTML = "";
             sortByHouse(option.value.toLowerCase());
-
         })
         //Skapa sök funktionen som ska loopa igenom alla divtaggar och kolla på vad varje element har för klassnamn.
         //Om klassnamnet !== option.value så ska kortet få nytt classnamn = hidden.
         let sortByHouse = function(x:string):void{
             allCards.forEach(element => {
-                if(!element.className.includes(x)){
-                    element.className = "hidden";
+                if(element.className.includes(x)){
+                    document.querySelector(element.className);
+                    cont.appendChild(element);
                 }
             });
-            option.value = ""
+            option.value = "";
         }
     });
 
